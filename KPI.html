@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>কুড়িগ্রাম পলিটেকনিক ইনস্টিটিউট</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      scroll-behavior: smooth;
+      color: #222;
+      background: #f9f9f9;
+      margin: 0;
+      padding-top: 70px;
+    }
+    /* Navbar */
+    .navbar {
+      background: linear-gradient(90deg, #004080, #0066cc);
+    }
+    .color-shift, .animated-title, .developer {
+      background: linear-gradient(270deg, #FF0000, #FF7F00, #FFFF00, #00FF00, #00FFFF, #0000FF, #8B00FF, #FF1493, #FFD700, #FF69B4, #FF0000);
+      background-size: 2000% 2000%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: colorAnimate 10s ease infinite;
+    }
+    @keyframes colorAnimate {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+    .nav-link {
+      color: #e0e0e0 !important;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    .nav-link:hover {
+      color: #ffcc00 !important;
+      text-shadow: 0 0 8px #ffcc00;
+    }
+    /* Hero */
+    .hero {
+      position: relative;
+      height: 550px;
+      background: linear-gradient(rgba(0, 38, 77, 0.7), rgba(0, 38, 77, 0.7)), 
+                  url('https://kurigrampoly.gov.bd/wp-content/uploads/2020/04/slider1.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      margin-bottom: 15px;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      font-weight: 500;
+    }
+    .btn-custom {
+      background: #ffcc00;
+      color: #004080;
+      font-weight: 700;
+      padding: 12px 30px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background 0.4s, color 0.4s;
+    }
+    .btn-custom:hover {
+      background: #ffd633;
+      color: #00264d;
+      box-shadow: 0 0 15px #ffd633;
+    }
+    /* Sections */
+    .section-title {
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.2rem;
+    }
+    /* Cards */
+    .card {
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgb(0 0 0 / 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      background: white;
+      padding: 20px;
+      height: 100%;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgb(0 0 0 / 0.15);
+    }
+    .card h5 {
+      font-weight: 700;
+      color: #004080;
+      margin-bottom: 10px;
+    }
+    .card p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.4;
+    }
+    /* Notice */
+    .list-group-item {
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #004080;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      cursor: default;
+      transition: background 0.3s;
+    }
+    .list-group-item:hover {
+      background: #fffbdb;
+    }
+    /* Contact */
+    #contact p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #004080;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.7;
+    }
+    /* Footer */
+    footer {
+      background: #003366;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      margin-top: 40px;
+      font-weight: 600;
+    }
+    .developer {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.4rem; }
+      .hero p { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand color-shift" href="#home">কুড়িগ্রাম পলিটেকনিক ইনস্টিটিউট</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">হোম</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">আমাদের সম্পর্কে</a></li>
+        <li class="nav-item"><a class="nav-link" href="#departments">ডিপার্টমেন্টস</a></li>
+        <li class="nav-item"><a class="nav-link" href="#notice">নোটিশ</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">যোগাযোগ</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <div>
+    <h1 class="animated-title"> কুড়িগ্রাম পলিটেকনিক ইনস্টিটিউট</h1>
+    <p>শিক্ষা, প্রযুক্তি ও নৈতিকতায় গড়ি সুন্দর ভবিষ্যৎ</p>
+    <a href="#about" class="btn btn-custom">আরো জানুন</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-5">
+  <div class="container">
+    <h2 class="section-title">আমাদের সম্পর্কে</h2>
+    <p class="text-center mx-auto" style="max-width: 700px;">
+      কুড়িগ্রাম পলিটেকনিক ইনস্টিটিউট একটি উচ্চমানের প্রযুক্তি শিক্ষা প্রতিষ্ঠান যা শিক্ষার্থীদের দক্ষতা ও নৈতিকতায় গড়ে তোলে।
+    </p>
+  </div>
+</section>
+
+<!-- Departments -->
+<section id="departments" class="bg-light py-5">
+  <div class="container">
+    <h2 class="section-title">ডিপার্টমেন্টস</h2>
+    <div class="row g-4">
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <h5>কম্পিউটার টেকনোলজি</h5>
+          <p>প্রোগ্রামিং, সফটওয়্যার ডেভেলপমেন্ট, নেটওয়ার্কিং, হার্ডওয়্যার শেখানো হয়।</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <h5>সিভিল টেকনোলজি</h5>
+          <p>নির্মাণ, নকশা, মানচিত্র তৈরি ও অবকাঠামো উন্নয়নের শিক্ষা।</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <h5>ইলেকট্রিক্যাল টেকনোলজি</h5>
+          <p>বিদ্যুৎ উৎপাদন, বিতরণ, রক্ষণাবেক্ষণ শেখানো হয়।</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="card h-100 text-center">
+          <h5>ইলেকট্রনিক্স টেকনোলজি</h5>
+          <p>ইলেকট্রনিক ডিভাইস, সার্কিট ডিজাইন, মাইক্রোকন্ট্রোলার ইত্যাদি শেখানো হয়।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Notice -->
+<section id="notice" class="py-5">
+  <div class="container">
+    <h2 class="section-title">নোটিশ বোর্ড</h2>
+    <ul class="list-group list-group-flush mx-auto" style="max-width: 600px;">
+      <li class="list-group-item">নতুন ভর্তি বিজ্ঞপ্তি প্রকাশিত হয়েছে</li>
+      <li class="list-group-item">ফাইনাল পরীক্ষা রুটিন প্রকাশিত হয়েছে</li>
+      <li class="list-group-item">ফলাফল প্রকাশিত হয়েছে</li>
+    </ul>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="section-title">যোগাযোগ</h2>
+    <p class="text-center mx-auto" style="max-width: 600px;">
+      📍 ঠিকানা: কুড়িগ্রাম, বাংলাদেশ <br />
+      📞 ফোন: 01310181354 <br />
+      ✉️ ইমেইল: shaponkumar796@gmail.com
+    </p>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; ২০২৫ কুড়িগ্রাম পলিটেকনিক ইনস্টিটিউট | সর্বস্বত্ব সংরক্ষিত
+  <p class="developer">Developed & Designed by Shapon Kumar Roy</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
